@@ -20,24 +20,51 @@ ENDPOINT | DESCRIPTION | COMMENTS
 [Get current styles]() |   |   
 [Reset styles]() |   |   
 
-## How to specify the styles and the logo
+## How to specify the styles 
 
 
 
 ## Endpoints 
 
-## Update current styles  
+### Update current styles  
 
-TBD 
+**Request URL**: {BASE_URL}/update/styles/
 
-## Get default styles 
+Request method: `POST`
 
-TBD
+This API call accepts an email address and adds it to the Breach Report account. The BR account must be associated with the secret API key (needs to be included in the request header).
 
-## Get current styles  
+The API call returns a response code and a status message including the Email ID.
 
-TBD 
+How to construct the request:
 
-## Reset styles  
+1. Include the API key in the request header.
+2. Include the style updates in the request body. See [How to specify the styles] for additional information. 
 
-TBD 
+### Get default styles 
+
+**Request URL**: {BASE_URL}/get/defaults/
+
+Request method: `GET` 
+
+**TBD**
+
+### Get current styles  
+
+**Request URL**: {BASE_URL}/get/styles/
+
+Request method: `GET` 
+
+**TBD**
+
+### Reset styles  
+
+### Get current styles  
+
+**Request URL**: {BASE_URL}/reset/styles/
+
+Request method: `GET` 
+
+**TBD**
+
+

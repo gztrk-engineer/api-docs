@@ -29,10 +29,13 @@ When done, contact your account manager and arrange the app to be published.
 
 TBD 
 
+## How to update the UX text
+
+TBD
+
 ## How to update the logo and the styles 
 
-To update the logo and the styles, you need to use XYZ Admin API. This is a RESTful API, normally located at `https://{organization}.xyz-api.com`. 
-You can update the base URL and the API key via [XYZ portal]().  
+To update the logo and the styles, you need to use XYZ Admin API. 
 
 To update the styles, you'll need following endpoints:
 
@@ -42,18 +45,17 @@ To update the styles, you'll need following endpoints:
 
 Additionally, the API provides [Reset styles]() call so you can reset the styles to default values. 
 
+To update the styles
+
 See [XYZ Admin API Reference]() for further information about the endpoints.  
 
-**Note**:  
-The app syncs the styles and logo 
+>**Note**:  
+>The app syncs the styles and the logo on each startup. 
+That means you may change the styles / logo after the app publishing, and you won't need to get the app published again. 
 
-## How to update the UX text
-
-TBD
 
 ## How to get the app published 
 
-See []() for further information.  
-
+Contact your account manager and confirm that you have configured the styles, the logo, and the UX text. 
 
 
