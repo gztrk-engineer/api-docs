@@ -43,5 +43,8 @@
         "primary_color": {
             "hex": "#00dd00"
         }
+        "secondary_color": {
+            "hex": "#ffdd00"
+        }
     }
 }
