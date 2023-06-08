@@ -22,19 +22,32 @@ ENDPOINT | DESCRIPTION | COMMENTS
 
 ## How the App defines the styles 
 
-The app's user interface is defined in the view files, one file for each view. Each element is defined by the tag, the view name, and additional parameters:
+The app's user interface is defined in the view files (folder `assets/views`). Each element is defined by several tags, that must start with element type context (location):
 
 ```
-[{tag}, {viewName}, {TBD}]
+["button", "login_screen"]
 ```
 
-Example:
+The app's backend provides a stylesheet, that is stored in JSON format.  
+The app requests the backend, gets a set of styles for each element, and renders the elements on the form. 
+As an admin, you can change the stylesheet, so the backend returns updated styles. 
 
 ```
-["button", "login_screen",...]
+ -------                         -------------
+|       |   getStyles([tags])   |             |
+|       | --------------------> | stylesheet. |
+|  App  | <-------------------- |    json     |
+|       |  {style properties}   |             |
+ -------                         -------------    
+                                     ^
+                                     |
+   ( )                               |
+  -----                              |
+    |    ---------------------------- 
+   / \       update the styles
+  Admin
+    
 ```
-
-
 
 
 

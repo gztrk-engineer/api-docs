@@ -20,7 +20,8 @@ Then, you need to personalize the app:
 * Check the app emulator 
 * Update the in-app text (UX copy) 
 * Update the styles and the logo 
-When done, contact your account manager and arrange the app to be published.
+When done, contact your account manager and arrange the app to be published in App Store and on Google Play.
+Now, the end users can install the app and use it.
 
 
 # Personalizing XYZ White Label App
@@ -37,15 +38,12 @@ TBD
 
 To update the logo and the styles, you need to use XYZ Admin API. 
 
-To update the styles, you'll need following endpoints:
+To manage the styles, you'll need following endpoints:
 
 * [Get default styles]() 
 * [Get current styles]() 
 * [Update current styles]() 
-
-Additionally, the API provides [Reset styles]() call so you can reset the styles to default values. 
-
-To update the styles
+* [Reset styles]()
 
 See [XYZ Admin API Reference]() for further information about the endpoints.  
 
