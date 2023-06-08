@@ -15,12 +15,30 @@ To update the styles, you'll need the following endpoints:
 
 ENDPOINT | DESCRIPTION | COMMENTS 
 ---|---|---  
-[Update current styles]() |   |   
-[Get default styles]() |   |   
-[Get current styles]() |   |   
-[Reset styles]() |   |   
+[Update current styles](#update-current-styles) | Updates the current stylesheet.   |   
+[Get default styles](#get-default-styles) | Returns the JSON with default styles.  |   
+[Get current styles](#get-current-styles) | Returns the JSON with default styles.  |   
+[Reset styles](#reset-styles) | Resets the stylesheet to defaults.  |   
 
-## How to specify the styles 
+## How the App defines the styles 
+
+The app's user interface is defined in the view files, one file for each view. Each element is defined by the tag, the view name, and additional parameters:
+
+```
+[{tag}, {viewName}, {TBD}]
+```
+
+Example:
+
+```
+["button", "login_screen",...]
+```
+
+
+
+
+
+## Stylesheet description
 
 
 
@@ -32,14 +50,14 @@ ENDPOINT | DESCRIPTION | COMMENTS
 
 Request method: `POST`
 
-This API call accepts an email address and adds it to the Breach Report account. The BR account must be associated with the secret API key (needs to be included in the request header).
+This API call accepts styles updates and adds it to the Breach Report account. The BR account must be associated with the secret API key (needs to be included in the request header).
 
-The API call returns a response code and a status message including the Email ID.
+The API call returns a response code and a status message.
 
 How to construct the request:
 
 1. Include the API key in the request header.
-2. Include the style updates in the request body. See [How to specify the styles] for additional information. 
+2. Include the style updates in the request body. See [How to specify the styles]() for additional information. 
 
 ### Get default styles 
 
