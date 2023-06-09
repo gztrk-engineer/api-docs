@@ -21,8 +21,8 @@ Style objects have the following structure:
 KEY  |  DATA TYPE | DESCRIPTION | COMMENTS    
 ---|---|---|---
 `rules` | Provides the`tags` object.  |   | 
-** `tags` | Array of tags. | One unique array of tags for the stylesheet. | Arrays of tags inside the stylesheet function similarly to [CSS class selectors (MDN)](). See   
-`properties` | Object with key-value pairs, se   | The app renders the elements using the specified properties. | The key-value pairs must be separated with commas (`,`).      
+  `tags` | Array of tags. | One unique array of tags for the stylesheet. | Arrays of tags inside the stylesheet function similarly to [CSS class selectors (MDN)](). See   
+`properties` | Set of properties.   | The app renders the elements using the properties for the matching `tags` array. | The key-value pairs must be separated with commas (`,`).      
 Property key-value pair | Property name, subtype, and value.  | Object format: `propertyName: { subtype: value }`. Example: `"backgroundColor": { "hex": "#00dddd" }`. | Available properties depend on the element type. See [List of available properties]() for additional info. 
 
 Here is an example of a property object:
@@ -30,27 +30,20 @@ Here is an example of a property object:
 ```json
 {
     "rule": {
-        "tags": [
-            "button",
-            "login-screen"
-        ]
+        "tags": [ "list-item", "hover" ]
     },
     "properties": {
-        "backgroundColor": {
-            "hex": "#00dddd"
-        },
-        "tintColor": {
-            "hex": "#ffffff"
-        },
-        "font":  {
-            "fontWeight": "400"
-        }
+        "backgroundColor": { "hex": "#00dddd" },
+        "tintColor": { "hex": "#ffffff" },
+        "font": { "fontWeight": "400" }
     }
 }
 ```
 
 
 # Style Matching Logic  
+
+
 
 
 
