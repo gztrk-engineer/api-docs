@@ -61,7 +61,7 @@ As an app engineer, you have the ability to modify the stylesheet thereby ensuri
 |       |   getStyles([tags])   |             |
 |       | --------------------> | stylesheet. |
 |  App  | <-------------------- |    json     |
-|       |   style properties    |             |
+|       |  style properties     |             |
  -------                         -------------    
                                      ^
                                      |
@@ -76,6 +76,6 @@ As an app engineer, you have the ability to modify the stylesheet thereby ensuri
 After making changes to the stylesheet, it's necessary to rebuild the app and publish it on Google Play and in Apple Store.  
 
 > **Learn more**:   
-> * [Stylesheet Specification](stylesheet-spec.md#stylesheet-format)  
+> * [Stylesheet Specification](stylesheet-spec.md#stylesheet-specification)  
 > * [Style Matching Logic](stylesheet-spec.md#style-matching-logic)  
 
