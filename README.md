@@ -61,14 +61,14 @@ As an app engineer, you have the ability to modify the stylesheet thereby ensuri
 |       |   getStyles([tags])   |             |
 |       | --------------------> | stylesheet. |
 |  App  | <-------------------- |    json     |
-|       |  {style properties}   |             |
+|       |   style properties    |             |
  -------                         -------------    
                                      ^
                                      |
    ( )                               |
   -----                              |
     |    ---------------------------- 
-   / \       update the styles
+   / \      update the stylesheet
   Admin
     
 ```
