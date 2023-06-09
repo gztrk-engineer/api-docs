@@ -2,37 +2,24 @@
     "styles": [
         {
             "rule": {
-                "tags": [
-                    "list-item"
-                ]
+                "tags": [ "list-item" ]
             },
             "properties": {
-                "backgroundColor": {
-                    "hex": "#00dddd"
-                },
-                "tintColor": {
-                    "hex": "#ffffff"
-                }
+                "backgroundColor": { "hex": "#00dddd" },
+                "tintColor": { "hex": "#ffffff" }
             }
         },
         {
             "rule": {
-                "tags": [
-                    "list-item",
-                    "hover"
-                ]
+                "tags": [ "list-item", "hover" ]
             },
             "properties": {
-                "backgroundColor": {
-                    "ref": "primary_color"
-                }
+                "backgroundColor": { "ref": "primary_color" }
             }
         },
         {
             "rule": {
-                "tags": [
-                    "control-StylableProgressBar"
-                ]
+                "tags": [ "control-StylableProgressBar" ]
             },
             "properties": {
                 "imageUrl": "file://c:/spinner-test4.gif"
@@ -42,7 +29,7 @@
     "values": {
         "primary_color": {
             "hex": "#00dd00"
-        }
+        },
         "secondary_color": {
             "hex": "#ffdd00"
         }
