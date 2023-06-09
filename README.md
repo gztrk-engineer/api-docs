@@ -12,38 +12,27 @@ As an engineer responsible for personalizing the app, your tasks involves updati
 
 ## How the app defines the styles 
 
-The app's user interface is defined in the view files found in the `assets/views` folder. Each element is identified by two or more tags, start that begin with the element type and context (location):  
+The app's user interface is defined in the view files located in the `assets/views` folder. Each element is identified by two or more tags. The array often begins with the element type and context or location:  
 
 ```python
-["button", "login-screen"]
+["button", "login-screen", "signup-button"]
 ```
 
-Subsequently, the app searches within the stylesheet and selects a set of styles that match the provided tags.
+The app searches within the stylesheet and selects a set of styles that match the provided tags.
 
-Here is an example of styles for a single element:
+Here is an example of a single ruleset (set of styles):
 
 ```json
 {
     "styles": [
         {
             "rule": {
-                "tags": [
-                    "button",
-                    "login-screen"
-                ]
+                "tags": [ "button", "login-screen", "signup-button"]
             },
             "properties": {
-                "backgroundColor": {
-                    "hex": "#00dddd"
-                },
-                "tintColor": {
-                    "hex": "#ffffff"
-                },
-                "font":  {
-                    "fontWeight": "400",
-                    "fontFamily": "Arial",
-                    "fontSize": "123px"
-                }
+                "backgroundColor": { "hex": "#00dddd" },
+                "tintColor": { "hex": "#ffffff" },
+                "font":  { "fontWeight": "400", }
             }
         }
     ]

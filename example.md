@@ -1,14 +1,15 @@
 # Stylesheet Example 
 
+Here is an example of a stylesheet, simplified for your convenience: 
+
 ```javascript
 {
     // All styles must be specified inside the 'styles' object
     "styles": [
-        // The tag(s) must match for the style property to be applied. 
         {  
             // An example ruleset may include one or more tag values (string). 
             "rule": {
-
+                // All tags must match the element for the ruleset to be applied. 
                 "tags": [ "list-item", "info-screen" ]
             },
             // If an element matches all tags from a ruleset, the app applies specified properties. 
