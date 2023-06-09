@@ -125,5 +125,5 @@ PRINCIPLE | DESCRIPTION | EXAMPLE
 ---|---|---  
 Aggregate the properties. | An element aggregates properties from all matching rulesets. | As the element matches all example rulesets, it will have all properties: `backgroundColor`, `tintColor`, and `font`.  
 Count the tags. | If multiple ruleset matches contain the same property (different values), the match with more tags prevails.  | Rulesets 1 and 2 have the same property: `backgroundColor`, but ruleset 2 includes more tags. Therefore, the element will use the property from ruleset 2: (`"backgroundColor": { "hex": "#0000ff" }`).   
-The order matters. | If the element matches multiple rulesets with the same number of tags, the last declared ruleset is applied.  | Rulesets 2 and 3 include the same property (`font`) and the same number of tags (two). In this case, the last declared matching ruleset is applied (`"font": {"fontWeight": "50px"}`).  
+The order matters. | If an element matches multiple rulesets with the same number of tags, the last declared ruleset is applied.  | Rulesets 2 and 3 include the same property (`font`) and the same number of tags (two). In this case, the last declared matching ruleset is applied (`"font": {"fontWeight": "50px"}`).  
 
