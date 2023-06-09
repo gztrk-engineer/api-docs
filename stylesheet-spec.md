@@ -1,5 +1,8 @@
 # Stylesheet Specification  
 
+I can also specify the schema using Stoplight, but I don't have a paid account and can't take advantage of the entire functionality: [Stoplight example](https://vassily.stoplight.io/docs/api-docs/branches/main/7feb65ed9ff60-stylesheet-model).  
+
+
 ## Top level structure
 
 The top level structure of the stylesheet is as follows:  
@@ -45,7 +48,7 @@ KEY  |  DATA TYPE | DESCRIPTION | COMMENTS
 
 To specify properties, follow this pattern:
 ```python
-{
+"properties": {
     property1: {subtype1: value1},
     property2: {subtype2: value2}
 }
