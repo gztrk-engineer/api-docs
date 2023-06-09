@@ -1,0 +1,109 @@
+{
+    "type": "object",
+    "x-examples": {
+        "Example 1": {
+            "styles": [
+                {
+                    "rule": {
+                        "tags": [
+                            "list-item"
+                        ]
+                    },
+                    "properties": {
+                        "backgroundColor": {
+                            "hex": "#00dddd"
+                        },
+                        "tintColor": {
+                            "hex": "#ffffff"
+                        }
+                    }
+                },
+                {
+                    "rule": {
+                        "tags": [
+                            "list-item",
+                            "hover"
+                        ]
+                    },
+                    "properties": {
+                        "backgroundColor": {
+                            "ref": "primary_color"
+                        }
+                    }
+                },
+                {
+                    "rule": {
+                        "tags": [
+                            "control-StylableProgressBar"
+                        ]
+                    },
+                    "properties": {
+                        "imageUrl": "file://c:/spinner-test4.gif"
+                    }
+                }
+            ],
+            "values": {
+                "primary_color": {
+                    "hex": "#00dd00"
+                }
+            }
+        }
+    },
+    "x-internal": false,
+    "properties": {
+        "styles": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "rule": {
+                        "type": "object",
+                        "properties": {
+                            "tags": {
+                                "type": "array",
+                                "description": "Includes one or more style tags (string values) from the view files. \nExample: `[\"list-items\", \"hover\"]`.\nMust be unique within the stylesheet. \nMust use the tags from the view files only. ",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "properties": {
+                        "type": "object",
+                        "description": "Collection of properties associated with the style tags. \n<br>\nTo specify properties, follow this pattern: \n<br>\n```\n\"properties\": {\n    property1: {subtype1: value1},\n    property2: {subtype2: value2}\n}\n```\n\n<br>\nExample: <br>\n\n\"properties\": { \"backgroundColor\": { \"hex\": \"#00dddd\" },\n                \"tintColor\": { \"hex\": \"#ffffff\" } }\n\n\nTo reuse properties, include variables: \n",
+                        "properties": {
+                            "{property}": {
+                                "type": "object",
+                                "x-stoplight": {
+                                    "id": "s4q7h30sf4y37"
+                                },
+                                "description": "Examples: \n<br>\n\n",
+                                "properties": {
+                                    "": {
+                                        "type": "string",
+                                        "x-stoplight": {
+                                            "id": "f019hg85n1ypg"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "values": {
+            "type": "object",
+            "properties": {
+                "primary_color": {
+                    "type": "object",
+                    "properties": {
+                        "hex": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
