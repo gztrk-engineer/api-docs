@@ -32,7 +32,7 @@ Here is an example of a single ruleset (set of styles):
             "properties": {
                 "backgroundColor": { "hex": "#00dddd" },
                 "tintColor": { "hex": "#ffffff" },
-                "font":  { "fontWeight": "400", }
+                "font":  { "fontWeight": "400" }
             }
         }
     ]
