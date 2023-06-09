@@ -5,10 +5,13 @@
     // All styles must be specified inside the 'styles' object
     "styles": [
         // The tag(s) must match for the style property to be applied. 
-        {
+        {  
+            // An example ruleset may include one or more tag values (string). 
             "rule": {
-                "tags": [ "list-item" ]
+
+                "tags": [ "list-item", "info-screen" ]
             },
+            // If an element matches all tags from a ruleset, the app applies specified properties. 
             "properties": {
                 "backgroundColor": { "hex": "#00dddd" },
                 "tintColor": { "hex": "#ffffff" }
