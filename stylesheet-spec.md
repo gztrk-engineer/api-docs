@@ -1,6 +1,6 @@
 # Stylesheet Specification  
 
-## Top-level structure
+## Top level structure
 
 The top level structure of the stylesheet is as follows:  
 
@@ -11,7 +11,7 @@ The top level structure of the stylesheet is as follows:
 }
 ```
 
-The table below provides a detailed description of the top-level properties: 
+The top level properties of the stylesheet are outlined below: 
 
 KEY  |  DATA TYPE | DESCRIPTION | COMMENTS    
 ---|---|---|---
@@ -35,12 +35,12 @@ Here is an example of a ruleset:
 }
 ```
 
-Ruleset structure is outined below: 
+A ruleset includes the following data: 
 
 KEY  |  DATA TYPE | DESCRIPTION | COMMENTS    
 ---|---|---|---
-`rule` | Object | Provides a nested `tags` array.   | 
-`tags` | Array | An array of style tags (string values). It can include tags for the element type, context or location, and / or element state.  | The array of tags functions similarly to [CSS class selectors (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors).  
+`rule` | Object | Contains a nested `tags` array.   | 
+`tags` | Array | An array of style tags (string values). It can include tags for the element type, context or location, element state, and more.  | The array of tags functions similarly to [CSS class selectors (MDN)](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors).  
 `properties` | Object | The app renders the elements using the properties for the matching `tags` array. |  
 
 To specify properties, follow this pattern:
@@ -63,7 +63,7 @@ Style variables can be reused throughout the `styles` section. These variables a
 To specify variables, follow this pattern: 
 ```json
 "values": {
-    variableName: { scale: value },
+    variableName: { subtype: value },
     ....
 }
 ```
@@ -99,7 +99,7 @@ We illustrate this section using the following example rulesets:
     },
     "properties": {
         "backgroundColor": { "hex": "#0000ff" }, 
-        "font": {"fontWeight": "400px" }
+        "font": {"fontWeight": "40px" }
     }
 },
 {
@@ -108,12 +108,12 @@ We illustrate this section using the following example rulesets:
         "tags": [ "button", "signin-button" ]
     },
     "properties": {
-        "font": {"fontWeight": "500px" }
+        "font": {"fontWeight": "50px" }
     }
 }
 ``` 
 
-The example element matches all three rulesets:  
+The example element matches each ruleset (includes all tags from each ruleset):  
 
 ```javascript
 ["button", "login-screen", "signin-button"] 
@@ -124,6 +124,6 @@ The style matching principles are outlined below:
 PRINCIPLE | DESCRIPTION | EXAMPLE   
 ---|---|---  
 Aggregate the properties. | An element aggregates properties from all matching rulesets. | As the element matches all example rulesets, it will have all properties: `backgroundColor`, `tintColor`, and `font`.  
-Count the tags. | If multiple ruleset matches contain the same property (different values), the match with more tags prevails. In  | Rulesets 1 and 2 have the same property: `backgroundColor`, but ruleset 2 includes more tags. Therefore, the element will use the property from ruleset 2: `"backgroundColor": { "hex": "#0000ff" }` 
-The order matters. | If the element matches multiple ruleset | Rulesets 2 and 3 include the same property (`font`) and the same number of tags (two). In this case, the last declared matching ruleset is applied (`"font": {"fontWeight": "50px"}`).  
+Count the tags. | If multiple ruleset matches contain the same property (different values), the match with more tags prevails.  | Rulesets 1 and 2 have the same property: `backgroundColor`, but ruleset 2 includes more tags. Therefore, the element will use the property from ruleset 2: (`"backgroundColor": { "hex": "#0000ff" }`).   
+The order matters. | If the element matches multiple rulesets with the same number of tags, the last declared ruleset is applied.  | Rulesets 2 and 3 include the same property (`font`) and the same number of tags (two). In this case, the last declared matching ruleset is applied (`"font": {"fontWeight": "50px"}`).  
 
