@@ -67,4 +67,5 @@ After making changes to the stylesheet, it's necessary to rebuild the app and pu
 > **Learn more**:   
 > * [Stylesheet Specification](stylesheet-spec.md#stylesheet-specification)  
 > * [Style Matching Logic](stylesheet-spec.md#style-matching-logic)  
+> * [Stylesheet Example](example.md)
 

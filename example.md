@@ -1,6 +1,6 @@
 # Stylesheet Example 
 
-Here is an example of a stylesheet, simplified for your convenience: 
+Here is a simplified example of a stylesheet: 
 
 ```javascript
 {
